@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
       DashboardComponent,
       BarChartComponent,
       HeaderComponent,
-      CalendarComponent
+      CalendarComponent,
+      PieChartComponent
     ],
     imports: [
       CommonModule,
