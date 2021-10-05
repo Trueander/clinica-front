@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid">
+        <div class="bg-success me-2">
+            <i class="fas fa-bars px-2 text-white"></i>
+        </div>
+        
+      <a class="navbar-brand me-5" href="#"><span class="text-primary ">POLICLINÍCO <span class="text-danger">JUAN</span> PABLO</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+                <button type="button" class="btn btn-light position-relative rounded-circle">
+                    <i class="fas fa-money-check text-muted"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                      0
+                    </span>
+                  </button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+                <button type="button" class="btn btn-light position-relative rounded-circle">
+                    <i class="fas fa-user text-muted"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                      0
+                    </span>
+                  </button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+                <button type="button" class="btn btn-light position-relative rounded-circle">
+                    <i class="fas fa-medkit text-muted"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                      0
+                    </span>
+                  </button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+                <button type="button" class="btn btn-light position-relative rounded-circle">
+                    <i class="fas fa-clipboard-check text-muted"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                      0
+                    </span>
+                  </button>
+            </a>
+          </li>
+
+        </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link dropstart" href="#">
+                    <i class="fas fa-user-md"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nacional
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Configuración</a></li>
+                        <li><a class="dropdown-item" href="#" (click)="logout()">Cerrar sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,127 @@
+.container-dashboard {
+  min-height: calc(100vh - 70px);
+}
+
+#sidebar {
+  background: #112233;
+  width: 220px;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  color: #fff;
+  z-index: 1111;
+}
+
+#dashboard {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  width: calc(100% - 220px);
+  left: 220px;
+  font-family: "Poppins", sans-serif;
+  color: #41464b;
+}
+
+.cards {
+  width: 100%;
+  padding: 28px 28px 0 28px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: calc(100% / 4 - 20px);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+  font-size: 14px;
+}
+/*   
+   
+  
+  .card-item .card-left .info {
+    font-size: 35px;
+    font-weight: 500;
+    display: inline-block;
+  } */
+
+.card-item .card-left {
+  /* text-align: center;
+    border-radius: 12px; */
+
+  width: 35%;
+}
+
+.card-item .card-right {
+  width: 65%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+li:hover {
+  background-color: #4e5255af;
+}
+
+.charts {
+  display: grid;
+  padding: 0px 37px;
+  grid-gap: 1.3rem;
+  /* grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr)); */
+  grid-template-columns: 2.8fr 1.2fr;
+  margin-bottom: 3em;
+}
+
+.bar-chart {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px 14px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  font-weight: 500;
+}
+
+.pie-chart {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 15px 14px;
+}
+
+.chart-data {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.box-1, .box-2, .box-3 {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 15px 14px;
+  height: 240px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+hr {
+  color: rgb(143, 143, 143);
+}

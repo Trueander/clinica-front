@@ -1,0 +1,313 @@
+<app-header></app-header>
+
+<div class="container-dashboard">
+
+    <div id="sidebar">
+      <div >
+        <ul class="nav flex-column hover px-0 mx-0 ul">
+          <li class="nav-item px-2 pt-3 pb-2 d-flex flex-row" style="cursor: pointer;">
+            <div class="col-2 text-center">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="col-9 ">
+                <span class="">Tablero</span>
+            </div>
+            <div class="col-1 text-center">
+                +
+            </div>
+          </li>
+          <li class="nav-item px-2 py-2 d-flex flex-row " style="cursor: pointer;">
+            <div class="col-2 text-center">
+                <i class="fas fa-user-md"></i>
+            </div>
+            <div class="col-9 " >
+                <span class="col-sm-8">Médico</span>
+            </div>
+            <div class="col-1 text-center">
+                +
+            </div>
+          </li>
+          <li class="nav-item px-2 py-2 d-flex flex-row "  style="cursor: pointer;" >
+            <div class="col-2 text-center">
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="col-9">
+                <span class="">Paciente</span>
+            </div>
+            <div class="col-1 text-center">
+                +
+            </div>
+          </li>
+          <li class="nav-item px-2 py-2 d-flex flex-row " style="cursor: pointer;" >
+            <div class="col-2 text-center">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="col-9">
+                <span class="">Programar</span>
+            </div>
+            <div class="col-1 text-center">
+                +
+            </div>
+          </li>
+          <li class="nav-item px-2 py-2 d-flex flex-row "  style="cursor: pointer;" >
+            <div class="col-2 text-center">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="col-9">
+                <span >Cita</span>
+            </div>
+            <div class="col-1 text-center">
+                +
+            </div>
+          </li>
+          <li class="nav-item px-2 py-2"  style="cursor: pointer;" >
+            <a class="d-flex flex-row" href="#recursosHumanos" data-bs-toggle="collapse" aria-expanded="false" aria-controls="recursosHumanos">
+                <div class="col-2 text-center">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="col-9">
+                    <span>Recursos</span ><span class="ms-1">humanos</span>
+                </div>
+                <div class="col-1 text-center">
+                    +
+                </div>
+            </a>
+          </li>
+          <li class="nav-item px-2 py-2"  style="cursor: pointer;" >
+            <a class="d-flex flex-row " href="#actividadFinanciera" data-bs-toggle="collapse" aria-expanded="false" aria-controls="actividadFinanciera">
+                <div class="col-2 text-center">
+                    <i class="fas fa-money-check"></i>
+                </div>
+                <div class="col-9">
+                    <span class="">Actividades financieras</span>
+                </div>
+                <div class="col-1 text-center">
+                    +
+                </div>
+            </a>
+            <ul class="collapse list-unstyled" id="actividadFinanciera">
+                <li class="nav-item"><a class="nav-link d-flex" >
+                    <div class="col-2 text-center">
+                        <i class="fas fa-money-check"></i>
+                    </div>
+                    <div class="col-10 ms-1">
+                        <span> Pagos</span>
+                    </div>
+                </a></li>
+                <li class="nav-item"><a class="nav-link d-flex" >
+                    <div class="col-2 text-center">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="col-10 ms-1">
+                        <span> Añadir pago</span>
+                    </div>
+                </a></li>
+                <li class="nav-item"><a class="nav-link d-flex" >
+                    <div class="col-2 text-center">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="col-10 ms-1">
+                        <span> Procedimiento de</span>
+                    </div>
+                </a></li>
+                <li class="nav-item"><a class="nav-link d-flex" >
+                    <div class="col-2 text-center">
+                        <i class="fas fa-money-check"></i>
+                    </div>
+                    <div class="col-10 ms-1">
+                        <span> Gastos</span>
+                    </div>
+                </a></li>
+                <li class="nav-item"><a class="nav-link d-flex" >
+                    <div class="col-2 text-center">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="col-10 ms-1">
+                        <span> Añadir gastos</span>
+                    </div>
+                </a></li>
+                <li class="nav-item"><a class="nav-link d-flex" >
+                    <div class="col-2 text-center">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="col-10 ms-1">
+                        <span>Categorías de gastos</span>
+                    </div>
+                </a></li>
+            </ul>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div id="dashboard">
+      <div  class="dashboard-content">
+        <div class="cards">
+          <div class="card-item">
+            <div class="card-left bg-success h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-user-md fa-3x"></i>
+            </div>
+            <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                
+                <div class="info fs-3">6</div>
+                <div class="title">Médicos</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-left bg-primary h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-user-friends fa-3x"></i>
+            </div>
+            <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                
+                <div class="info fs-3">12</div>
+                <div class="title">Pacientes</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-left bg-warning h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-calendar-check fa-3x"></i>
+              </div>
+              <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                  
+                  <div class="info fs-3">37</div>
+                  <div class="title">Citas</div>
+              </div>
+          </div>
+          <div class="card-item">
+            <div class="card-left bg-primary h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-file-medical fa-3x"></i>
+              </div>
+              <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                  
+                  <div class="info fs-3">5</div>
+                  <div class="title">Médico</div>
+              </div>
+          </div>
+          <div class="card-item">
+            <div class="card-left bg-primary h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-medkit fa-3x"></i>
+              </div>
+              <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                  
+                  <div class="info fs-3">8</div>
+                  <div class="title">Historial del caso</div>
+              </div>
+          </div>
+          <div class="card-item">
+            <div class="card-left bg-success h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-flask fa-3x"></i>
+              </div>
+              <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                  
+                  <div class="info fs-3">18</div>
+                  <div class="title">Reporte de laboratorio</div>
+              </div>
+          </div>
+          <div class="card-item">
+            <div class="card-left bg-primary h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-file fa-3x"></i>
+              </div>
+              <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                  
+                  <div class="info fs-3">5</div>
+                  <div class="title">Documentos</div>
+              </div>
+          </div>
+          <div class="card-item">
+            <div class="card-left bg-warning h-100 d-flex justify-content-center align-items-center text-white">
+                <i class="fas fa-money-check fa-3x"></i>
+              </div>
+              <div class="card-right d-flex justify-content-center align-items-center flex-column text-muted">
+                  
+                  <div class="info fs-3">13</div>
+                  <div class="title">Pago Factura</div>
+              </div>
+          </div>
+        </div>
+
+        <div class="charts">
+            <div class="bar-chart">
+              <div class="chart-title d-flex justify-content-center">
+                  <span class="fs-6 fw-bold">2021 Ingresos / gastos mensuales</span>
+              </div>
+              <hr>
+              <div class="chart-data">
+                <app-bar-chart style="width: 100%; height: 300px;"></app-bar-chart>
+              </div>
+            </div>
+
+            <div class="pie-chart">
+              <div class="chart-title fs-6 fw-bold">
+                October, 2021
+              </div>
+              <div class="chart-data">
+              </div>
+              
+            </div>
+            <div class="bar-chart">
+                <div class="chart-title d-flex justify-content-center">
+                    <span class="fs-6 fw-bold">Calendario Cirugías</span>
+                    
+                </div>
+                <hr>
+                <div class="chart-data">
+                  <app-calendar ></app-calendar>
+                  
+                </div>
+              </div>
+  
+                  <div class="boxes">
+                    <div class="box-1">
+                        <div class="chart-title fs-6 fw-bold">
+                            Sab 02 Octubre, 2021
+                        </div>
+                        <div class="chart-data">
+                            <hr>
+                            <span>Ingresos: {{ingresosBox1 | currency: '$':'symbol':'1.0'}}</span>
+                            <hr>
+                            <span>Gastos: {{gastosBox1 | currency: '$':'symbol':'1.0'}}</span>
+                            <hr>
+                            <span>Cita: {{citasBox1}}</span>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="chart-title fs-6 fw-bold">
+                  
+                            Octubre, 2021
+                        </div>
+                        <div class="chart-data">
+                            <hr>
+                            <span>Ingresos: {{ingresosBox2 | currency: '$':'symbol':'1.0'}}</span>
+                            <hr>
+                            <span>Gastos: {{gastosBox2 | currency: '$':'symbol':'1.0'}}</span>
+                            <hr>
+                            <span>Cita: {{citasBox2}}</span>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="chart-title fs-6 fw-bold">
+                  
+                            Octubre, 2021
+                        </div>
+                        <div class="chart-data">
+                            <hr>
+                            <span>Ingresos: {{ingresosBox3 | currency: '$':'symbol':'1.0'}}</span>
+                            <hr>
+                            <span>Gastos: {{gastosBox3 | currency: '$':'symbol':'1.0'}}</span>
+                            <hr>
+                            <span>Cita: {{citasBox3}}</span>
+                            <hr>
+                        </div>
+                    </div>
+                  </div>
+
+              
+          </div>
+
+      </div>
+
+    </div>
+</div>
