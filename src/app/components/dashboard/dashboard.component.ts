@@ -20,6 +20,8 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // this.ingresosBox1 = this.numberFormat.transform(this.ingresosBox1);
+    // console.log(this.ingresosBox1)
   }
 
 }
